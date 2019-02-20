@@ -1,4 +1,4 @@
-# DamperDynamometer #
+# Damper Dynamometer #
 
 ### History ###
 The damper dynamometer project was originally started by three Mechanical Engineers seniors as a capstone project.
