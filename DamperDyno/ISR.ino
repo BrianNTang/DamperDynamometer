@@ -1,4 +1,4 @@
-// Interrupt Serice Routine (ISR)
+// Interrupt Service Routine (ISR)
 void switchOutputs () {
   cState = !cState;
   digitalWrite(compressionPin, cState);
