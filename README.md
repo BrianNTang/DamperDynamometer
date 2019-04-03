@@ -8,7 +8,7 @@ I rewrote/revised the original code I was given multiple times into the version 
 This project as a whole was my introduction to mechanical engineering, electrical engineering, and programming.
 
 ### Description ###
-The damper dynamometer (damper dyno for short) is an existing physical system that is used to measure the damping coefficients
+The damper dynamometer (damper dyno) is an existing physical system that is used to measure the damping coefficients
 of automotive dampers. The damper dyno used two sensors, a load cell and linear potientometer,
 to build a force versus velocity curve used to interpolate the damping coefficients.
 An arduino collected the data from the sensors and sent the information through the Serial line for post-processing.
