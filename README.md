@@ -64,12 +64,13 @@ Understanding the entire system as a whole and debugging issues was my greatest 
 Having to deduce whether the issue is a mechanical problem, electrical problem, or software problem
 and figuring out how to fix that problem became the main bulk of the project.
 The collection of considering how the electronics measures the mechanics
-and how the software translates the electrical signals into a digital form was proved to be just rewarding as it was difficult.
+and how the firmware digitizes the electrical signals proved to be just rewarding as it was difficult.
 
 
-One core issue I found near the end of the project was that the load cell was rated to measure 2000 lb when the maximum force expected to be seen was 330 lb.
-Since I was trying to accurately read less than 16.5% of the load cell's resolution, I was not getting the resolution desired for the project even with the strain gauge amplifier.
+One core issue I found towards the end of the project was that the load cell was rated to measure 2000 lb
+when the maximum force expected to be seen was 330 lb. Since I was trying to accurately read less than 16.5% of the
+load cell's resolution, I was not getting the resolution desired for the project even with the strain gauge amplifier.
 
 
-Another core issue I found was that the 24-bit analog-to-digital converter that I outfitted on the
-Arduino microcontroller was the main performance bottleneck as it took several hundred clock cycles to translate one analog signal to a digital value.
+Another core issue I found was that the 24-bit analog-to-digital converter that I outfitted on the Arduino microcontroller
+was the main performance bottleneck as it took several hundred clock cycles to translate one analog signal to a digital value.
