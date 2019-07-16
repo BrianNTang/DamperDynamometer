@@ -2,21 +2,24 @@
 
 ### Background ###
 The damper dynamometer project was originally started by three Mechanical Engineer seniors as a capstone project.
-I took on completely the capstone solely as part of the UW Formula Motorsports during my freshman year at the University
-of Washington. The capstone project was mostly completed when I took on the project where there was an alumnium case,
-a plunger-type actuator, a pneumatic solenoid to control the actuation, most of the sensor hardware to capture
-data, and working code to actuate the damper dynamometer.
+I solely took on completing the capstone as part of the UW Formula Motorsports during my freshman year at the University
+of Washington. Most of the capstone when I took on the project where there was an alumnium case, a plunger-type actuator,
+a pneumatic solenoid to control the actuation, most of the sensor hardware to capture data, 
+and working code to actuate the damper dynamometer.
 
 ### Description ###
 The damper dynamometer (or damper dyno) is an existing physical system that is used to measure the damping coefficients
 of automotive dampers. The damper dyno used an rod powered by pneumatics to actuate the damper and two sensors: a load cell
 and linear potentiometer. Using the data from the load cell and linear potentiometer in a feedback loop, a force versus
-velocity plot can be formed and interpolate the damping coefficient.
+velocity plot can be formed and interpolate the damping coefficient using the following equation:
+```C = F/V```, where C is damping coefficient, F is the force exerted by the damper measured by the load cell,
+and V is the velocity of the damper derived by position over time measured by the linear potientometer.
 
 
 Using software, an Arduino microcontroller can be programmed to actuate the system, read in sensor data, and create a feedback
-loop to control the actuation of the system more precisely. To actuate the system, the Arduino sends signals to open and close
-the supply and exhaust valves of a pnuematic solenoid to retract and extend the plunger-type actuator.
+loop to control the actuation of the system more precisely to reach a constant velocity of 10 inches per second.
+To actuate the system, the Arduino sends signals to open and close the supply and exhaust valves of a pnuematic solenoid
+to retract and extend the plunger-type actuator.
 
 
 The two sensors used was a 2000 lb LCM325 Futek load cell and a CLP-75 linear potentiometer with a 10-inch
